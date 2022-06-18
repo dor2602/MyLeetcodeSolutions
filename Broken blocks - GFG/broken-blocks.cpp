@@ -19,7 +19,7 @@ class Solution
             if(matrix[i][j] == -1)
                 continue ;
             int v = matrix[i][j];
-            matrix[i][j] = -1 ;
+            matrix[i][j] = -1;
             
             if(j-1 >= 0 && matrix[i-1][j-1] != -1)
                 matrix[i][j] = max(matrix[i][j], matrix[i-1][j-1] + v);
