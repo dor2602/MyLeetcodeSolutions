@@ -1,4 +1,5 @@
-class Solution {
+class Solution 
+{
 public:
     int isPrefixOfWord(string sentence, string searchWord) 
     {
@@ -12,7 +13,6 @@ public:
             else
             {
                 string str = sentence.substr(i,searchWord.size());
-                
                 if(str == searchWord && (i == 0  || sentence[i-1] == ' '))
                     return index;
             }
