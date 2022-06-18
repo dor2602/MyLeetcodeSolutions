@@ -17,7 +17,6 @@ public:
             fast = fast->next->next;
             if(fast == head)
                 return true;
-           
         }
         return false;
     }
