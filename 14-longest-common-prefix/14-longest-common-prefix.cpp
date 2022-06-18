@@ -1,4 +1,5 @@
-class Solution {
+class Solution 
+{
 public:
     string longestCommonPrefix(vector<string>& strs) 
     {
@@ -14,7 +15,6 @@ public:
         while(i < e && str[i] == str1[i])
             i++;
         string str2 = str.substr(0,i);
-        return str2;
-        
+        return str2;      
     }
 };
