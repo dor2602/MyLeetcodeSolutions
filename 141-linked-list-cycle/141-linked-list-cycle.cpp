@@ -14,9 +14,9 @@ public:
         while(head && fast && fast->next)
         {
             head = head->next;
-            fast = fast->next->next;
-            if(fast == head)
+            if(fast->next->next == head)
                 return true;
+            fast = fast->next->next;
         }
         return false;
     }
