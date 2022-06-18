@@ -5,8 +5,9 @@ public:
     {
         if(s == "")
             return true;
+        int i;
         string str = "";
-        for(int i = 0;i<s.size();i++)
+        for( i = 0;i<s.size();i++)
         {
             if('a'<=s[i] && s[i]<='z'|| s[i] >='0' && s[i]<='9')
             {
@@ -16,8 +17,8 @@ public:
             if('A'<=s[i]&& s[i]<='Z')
                 str+=tolower(s[i]);
         }
+        i=0;
         int j = str.size()-1;
-        int i=0;
         while(i < j)
             if(str[i++] != str[j--])
                 return false;
