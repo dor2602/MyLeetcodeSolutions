@@ -1,4 +1,5 @@
-class Solution {
+class Solution 
+{
 public:
     bool isValidSudoku(vector<vector<char>>& board) 
     {
@@ -24,8 +25,7 @@ public:
                    if(arr[board[j][i]-1-'0']!=0)
                      return false;
                    arr[board[j][i]-1-'0']++;
-                }
-                           
+                }           
             }   
         int i = 0, j = 0;
         while (i < 9)
@@ -39,8 +39,7 @@ public:
                     if (board[start][end] == '.') continue;
                     if(arr[board[start][end]-1-'0']!=0)
                       return false;
-                    arr[board[start][end]-1-'0']++;
-                    
+                    arr[board[start][end]-1-'0']++; 
                 }
             }
             j += 3;
