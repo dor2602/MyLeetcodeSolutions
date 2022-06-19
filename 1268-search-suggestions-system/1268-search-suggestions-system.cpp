@@ -14,7 +14,7 @@ public:
             str += searchWord[i];
             for (int j = 0; j < products.size(); j++)
             {
-                if (products[j].substr(0, str.size()) == str && count < 3)
+                if (products[j].substr(0,i+1) == str && count < 3)
                 {
                     count++;
                     v.push_back(products[j]);
