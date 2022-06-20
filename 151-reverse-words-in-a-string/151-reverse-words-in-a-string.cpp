@@ -1,4 +1,5 @@
-class Solution {
+class Solution 
+{
 public:
     string reverseWords(string s)
 {
@@ -7,17 +8,15 @@ public:
     {
         if (s[i] == ' ')
             continue;
-
         string str = "";
         while (i>=0 && s[i] != ' ')
         {
             str += s[i];
             i--;
         }
-        
         reverse(str.begin(), str.end());
         if (i > 0)
-          result += str + s[i];
+            result += str + s[i];
         else
             result += str;
     }
