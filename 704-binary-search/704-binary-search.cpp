@@ -14,6 +14,5 @@ public:
             else return mid;
         }
         return -1;
-        
     }
 };
