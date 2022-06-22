@@ -6,6 +6,6 @@ public:
         for (int i = 0; i < s.size(); i++)
             if (s[i] == letter)
                 count++;
-        return int(count/s.size() * 100);
+        return int(count/s.size()*100);
     }
 };
