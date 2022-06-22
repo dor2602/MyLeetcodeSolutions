@@ -10,8 +10,7 @@ public:
             {
                 pQ.pop();
                 pQ.push(nums[i]);
-            }
-        
+            } 
         return pQ.top();
     }
 };
