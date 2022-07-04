@@ -15,7 +15,6 @@ public:
         if(!head || !head->next)
             return head;
         ListNode* temp=head->next; 
-         
         head->next = swapPairs(head->next->next); // changing links
         temp->next = head; // put temp -> next to head
         return temp; 
