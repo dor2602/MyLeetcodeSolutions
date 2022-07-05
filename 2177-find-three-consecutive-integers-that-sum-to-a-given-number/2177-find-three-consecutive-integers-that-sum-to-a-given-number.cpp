@@ -7,14 +7,8 @@ public:
             return v;
         long long sum ;
         sum=num/3;
-        if(sum + sum-1+sum-2 == num)
-            return v={sum-2,sum-1,sum};
-        else if(sum+sum+1+sum-1 == num)
+        if(sum+sum+1+sum-1 == num)
             return v={sum-1,sum,sum+1};
-        else if(sum+sum+1+sum+2 == num)
-            return v={sum,sum+1,sum+2};
         return v;
-            
-        
     }
 };
