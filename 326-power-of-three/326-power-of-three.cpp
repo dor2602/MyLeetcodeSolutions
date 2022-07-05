@@ -2,7 +2,7 @@ class Solution {
 public:
     bool isPowerOfThree(int n) 
     {
-        if(n <= 0 || n==2)
+        if(n <= 0 || n%3==2)
             return false;
         while(n>1)
         {
