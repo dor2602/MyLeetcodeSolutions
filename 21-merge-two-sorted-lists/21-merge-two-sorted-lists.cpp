@@ -43,6 +43,5 @@ public:
            list2 = list2->next;
        }
        return next_dummy->next;
-       
     }
 };
