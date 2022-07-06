@@ -10,10 +10,9 @@ public:
            return arr[n];
        for(int i=3;i<n;i++)
        {
-           int save=arr[1];
-           swap(arr[1],arr[2]);
+           swap(arr[0],arr[1]);
            arr[2]  = arr[0]+arr[1]+arr[2];
-           arr[0]=save;
+           arr[1]=arr[2]-arr[1]-arr[0];
        }
        return arr[0]+arr[1]+arr[2];
     }
