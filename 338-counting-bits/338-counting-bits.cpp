@@ -11,8 +11,7 @@ public:
             count=0;
             while(num>0)
             {
-                if(num%2==1)
-                    count++;
+                if(num%2==1) count++;
                 num=num/2;
             }
             v.push_back(count);
