@@ -9,9 +9,8 @@ public:
         arr[1]=1;
         for(int i=2;i<=n;i++)
         {
-            int save=arr[1];
-            arr[1]=save+arr[0];
-            arr[0]=save;
+            swap(arr[1],arr[0]);
+            arr[1] = arr[1]+arr[0];
         }
         return arr[1];
     }
