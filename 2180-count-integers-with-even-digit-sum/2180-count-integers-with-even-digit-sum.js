@@ -11,5 +11,4 @@ var countEven = function(num) {
             temp = Math.floor(temp/10);
         }
     return sum%2 == 0? Math.floor(num/2):Math.ceil(num/2-1);
-    
 };
