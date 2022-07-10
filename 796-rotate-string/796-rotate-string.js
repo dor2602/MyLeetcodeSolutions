@@ -12,7 +12,6 @@ var rotateString = function(s, goal)
             if(s.slice(i) == goal)
                 return true;
             s+=s[i];
-           // s=s.substr(1);
         }
     return false;
 };
