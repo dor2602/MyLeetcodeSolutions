@@ -9,10 +9,10 @@ var rotateString = function(s, goal)
         return false;
     for(let i in s)
         {
-            if(s == goal)
+            if(s.slice(i) == goal)
                 return true;
-            s+=s[0];
-            s=s.substr(1);
+            s+=s[i];
+           // s=s.substr(1);
         }
     return false;
 };
