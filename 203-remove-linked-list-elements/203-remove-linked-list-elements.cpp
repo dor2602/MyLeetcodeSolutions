@@ -12,6 +12,7 @@ class Solution {
 public:
     ListNode* removeElements(ListNode* head, int val) 
     {
+         
         if(!head)
             return head;
         ListNode* del;
@@ -21,12 +22,12 @@ public:
             head=head->next;
             delete del;
         }
-        del=head;
-        while(del && del->next)
+        ListNode* tmp=head;
+        while(tmp && tmp->next)
         {
-            if(del->next->val == val)
-                del->next = del->next->next;
-            else del = del->next;
+            if(tmp->next->val == val)
+                tmp->next = tmp->next->next;
+            else tmp = tmp->next;
         }
         return head;
     }
