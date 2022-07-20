@@ -14,18 +14,19 @@ public:
     {
         if(!head)
             return head;
+        ListNode* del;
         while(head && head->val == val)
         {
-            ListNode* del = head;
+            del = head;
             head=head->next;
             delete del;
         }
-        ListNode* tmp=head;
-        while(tmp && tmp->next)
+        del=head;
+        while(del && del->next)
         {
-            if(tmp->next->val == val)
-                tmp->next = tmp->next->next;
-            else tmp = tmp->next;
+            if(del->next->val == val)
+                del->next = del->next->next;
+            else del = del->next;
         }
         return head;
     }
