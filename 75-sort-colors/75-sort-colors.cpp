@@ -12,7 +12,5 @@ public:
         for(int i=k;i<nums.size();i++)
            if(nums[i] == 2)
                swap(nums[k++],nums[i]);
-       
-        
     }
 };
