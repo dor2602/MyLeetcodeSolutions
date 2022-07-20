@@ -10,15 +10,13 @@
  */
 class Solution {
 public:
-    ListNode* removeElements(ListNode* head, int val) 
+     ListNode* removeElements(ListNode* head, int val) 
     {
-         
         if(!head)
             return head;
-        ListNode* del;
         while(head && head->val == val)
         {
-            del = head;
+            ListNode* del = head;
             head=head->next;
             delete del;
         }
