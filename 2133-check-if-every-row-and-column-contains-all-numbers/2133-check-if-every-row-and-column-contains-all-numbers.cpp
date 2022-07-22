@@ -3,7 +3,7 @@ public:
     bool checkValid(vector<vector<int>>& matrix) 
     {
         int n=matrix.size();
-        set<int>row,col;
+        unordered_set<int>row,col;
         for(int i=0;i<n;i++)
         {
             row.clear();
