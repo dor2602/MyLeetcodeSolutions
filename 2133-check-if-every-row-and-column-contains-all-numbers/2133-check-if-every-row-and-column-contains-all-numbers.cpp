@@ -3,11 +3,12 @@ public:
     bool checkValid(vector<vector<int>>& matrix) 
     {
         int n=matrix.size();
-        unordered_set<int>row,col;
+        //unordered_set<int>row,col;
         for(int i=0;i<n;i++)
         {
-            row.clear();
-            col.clear();
+            unordered_set<int>row,col;
+            //row.clear();
+            //col.clear();
             for(int j=0;j<n;j++)
             {
                 row.insert(matrix[i][j]);
