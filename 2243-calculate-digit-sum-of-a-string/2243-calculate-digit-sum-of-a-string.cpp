@@ -2,12 +2,8 @@ class Solution {
 public:
     string digitSum(string s, int k) 
     {
-        if(k>s.size())
-            return s;
-        while(true)
+        while(k<s.size())
         {
-            if(k<s.size())
-            {
                 string replace = "";
                 for(int i=0; i<s.size(); i+=k)
                 {
@@ -19,8 +15,6 @@ public:
                     replace+=to_string(sum);
                 }
                 s=replace;
-            }
-            else break;
         }
         return s;
     }
