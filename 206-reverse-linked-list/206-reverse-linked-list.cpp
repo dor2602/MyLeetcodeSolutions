@@ -20,7 +20,6 @@ public:
             prev = current;
             current = next;
         }
-        current = prev;
-        return current;
+        return prev;
     }
 };
